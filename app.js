@@ -32,5 +32,7 @@ document.querySelector(".button-primary").addEventListener("click", (e) => {
 document.body.addEventListener("mousedown", (e) => {
   if (e.target.className === "button") {
     window.location.reload();
+    document.querySelector(".message").innerHTML =
+      " <p style='color:red'> </p>";
   }
 });
